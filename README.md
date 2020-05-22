@@ -1,12 +1,11 @@
 COMP6200 Data Science Portfolio 
 ===
 
-This repository will hold your portfolio projects for this semester. You should customise this README.md file
-to document your own work - add your name and details and describe what you've done.  This will be displayed
-on your Github page.
+Portfolio 1:
 
-Portfolio projects
-
-1. Analysis of CSV data for cycling 
-
-
+Analysis of CSV data for cycling strava and cheetah. Used inner join to join the two dataframes for which output will contain columns present in strava only.
+Removed the rides with no measured power and with Nan vales
+Used subplot to plot multiple graphs at a time.
+Skew() : In-built function we get the skewness of the data over a requested axis wherein a value closer to 0 represents a normal distribution
+Heatmap : A rectangular color encoded matrix which shows the correlation between variables on a scale of 1 to -1.
+Made use of differnt plotting techniques e.g. scatter plot, distplot, bar plot for data visualisation.
