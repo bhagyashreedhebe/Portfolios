@@ -14,4 +14,13 @@ Portfolio 1:
 
 Portfolio 2:
 
+Analysing COVID-19 Data
+1. Data for Covid-19 available by Johns Hopkins University in "https://github.com/CSSEGISandData/COVID-19" GitHub repository.
+2. The data has country and region names and not just countries. Made us of groupby to group the countries depending on the country name and dropped irrelevant coulmns of Latitude and Longitude.
+3. loc() method is used to filter and select data based on labels and our labels are 'Country/Region' and dates.
+4. To compare the data for different countries we should plot for different countries. So I have selected the data using loc on the index which is or 'Country/Region'.
+5. The challenge given to us was to create a visualisation showing the data for different countries aligned from the time that they have 100 confirmed cases. For this purpose I used a copy of grouped dataframe and filtered out the values that are above 100 or else have set them to NaN. Extracted the data for countries of our interest in my_countries df. Saved it by taking the transpose (swapping rows and columns). Dropped the NaN values and saved into my_new_countries df and created plot for it. Using ggplot for better visualization, it changes the label color to grey and axis background to light grey.  We can see the trend of growths observed depending upon the countries in the plots.
+6. Normalisation by Population : Population data was downloaded from https://datahub.io/JohnSnowLabs/population-figures-by-country#data for which the latest entry was of year 2016. Considered this entry for our analysis in country_population dataframe. Created latest_df to contain the data for the latest date as Cases. Merged the dataframe with the country_population using merge() by giving columns in the function and created dfinal df. Added a column for "per million cases" to document the number of cases per million of the population. Plotted these values in a bar plot which showed maximum number of cases per million in US.
+7. Used two linear regression modeling by considering the countries US and China. Results were found out to be better for model considering US as y variable.
+
 
